@@ -7,7 +7,7 @@ title: Music
         {% if post.projects %}
             {% if post.hidden != true %}
                 <div class="item {% if post.star %}star{% endif %}">
-                    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ https://vinolamusic.bandcamp.com }}{{ post.url }}{% endif %}">
+                    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}https://vinolamusic.bandcamp.com{% endif %}">
                         <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
                         <h3 class="title">{{ post.title }}</h3>
                     </a>
